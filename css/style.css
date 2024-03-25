@@ -92,18 +92,18 @@ body {
     font-size: 18px;
 }
 
-.container-fluid>.entertainment {
+.container-fluid>.content {
     width: 100%;
 }
 
-.container-fluid>.entertainment>.container {
+.container-fluid>.content>.container {
     width: 80%;
     margin: auto;
     display: flex;
     gap: 3%;
 }
 
-.container-fluid>.entertainment>.container>.container_left {
+.container-fluid>.content>.container>.container_left {
     width: 73%;
     display: grid;
     grid-template-columns: 65% 35%;
@@ -112,7 +112,7 @@ body {
 
 
 
-.container-fluid>.entertainment>.container>.container_left>a {
+.container-fluid>.content>.container>.container_left>a {
     width: 100%;
     height: 100%;
     /* background-color: aquamarine; */
@@ -122,7 +122,7 @@ body {
 
 
 
-.container-fluid>.entertainment>.container>.container_left>a>.flag {
+.container-fluid>.content>.container>.container_left>a>.flag {
     position: absolute;
     top: 10px;
     display: inline-block;
@@ -132,13 +132,13 @@ body {
     background-color: var(--color-primary);
 }
 
-.container-fluid>.entertainment>.container>.container_left>a:nth-child(2)>.flag,
-.container-fluid>.entertainment>.container>.container_left>a:nth-child(3)>.flag {
+.container-fluid>.content>.container>.container_left>a:nth-child(2)>.flag,
+.container-fluid>.content>.container>.container_left>a:nth-child(3)>.flag {
     background-color: var(--color-success);
 }
 
 
-.container-fluid>.entertainment>.container>.container_left>a>.flag::after {
+.container-fluid>.content>.container>.container_left>a>.flag::after {
     content: "";
     position: absolute;
     top: 0%;
@@ -148,12 +148,12 @@ body {
     border-color: transparent transparent transparent var(--color-primary);
 }
 
-.container-fluid>.entertainment>.container>.container_left>a:nth-child(2)>.flag::after,
-.container-fluid>.entertainment>.container>.container_left>a:nth-child(3)>.flag::after {
+.container-fluid>.content>.container>.container_left>a:nth-child(2)>.flag::after,
+.container-fluid>.content>.container>.container_left>a:nth-child(3)>.flag::after {
     border-color: transparent transparent transparent var(--color-success);
 }
 
-.container-fluid>.entertainment>.container>.container_left>a>.time {
+.container-fluid>.content>.container>.container_left>a>.time {
     position: absolute;
     bottom: 20px;
     left: 10px;
@@ -161,7 +161,7 @@ body {
     font-size: 13px;
 }
 
-.container-fluid>.entertainment>.container>.container_left>a>.overlay {
+.container-fluid>.content>.container>.container_left>a>.overlay {
     /* width: 100%;
     height: 100%;
     background: var(--linear-gradient-overlay);
@@ -171,48 +171,48 @@ body {
     position: absolute; */
 }
 
-/* .container-fluid>.entertainment>.container>.container_left>a:hover>.overlay {
+/* .container-fluid>.content>.container>.container_left>a:hover>.overlay {
     opacity: 1;
 } */
 
-.container-fluid>.entertainment>.container>.container_left>a .text {
+.container-fluid>.content>.container>.container_left>a .text {
     position: absolute;
     left: 10px;
     bottom: 25px;
 }
 
-.container-fluid>.entertainment>.container>.container_left>a:hover .text {
+.container-fluid>.content>.container>.container_left>a:hover .text {
     /* display: flex; */
     bottom: 40px;
     transition: var(--default-transition);
 }
 
-.container-fluid>.entertainment>.container>.container_left>a:hover .text>.desc {
+.container-fluid>.content>.container>.container_left>a:hover .text>.desc {
     display: flex;
     /* bottom: 70px;
     transition: var(--default-transition); */
 }
 
-.container-fluid>.entertainment>.container>.container_left>a>.text>.title {
+.container-fluid>.content>.container>.container_left>a>.text>.title {
     font-size: 20px;
     font-weight: 500;
     color: white;
 }
 
-.container-fluid>.entertainment>.container>.container_left>a>.text>.desc {
+.container-fluid>.content>.container>.container_left>a>.text>.desc {
     font-size: 15px;
     display: none;
     color: white;
 }
 
-.container-fluid>.entertainment>.container>.container_left>a>img {
+.container-fluid>.content>.container>.container_left>a>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
 }
 
-.container-fluid>.entertainment>.container>.container_right {
+.container-fluid>.content>.container>.container_right {
     width: 24%;
     display: grid;
     grid-template-columns: 100%;
@@ -220,13 +220,13 @@ body {
 
 }
 
-.container-fluid>.entertainment>.container>.container_right>a {
+.container-fluid>.content>.container>.container_right>a {
     width: 100%;
     height: 100%;
     background-color: blue;
 }
 
-.container-fluid>.entertainment>.container>.container_right>a>img {
+.container-fluid>.content>.container>.container_right>a>img {
     width: 100%;
     height: 100%;
     background-color: blue;
@@ -235,13 +235,13 @@ body {
 /* need to rewrite */
 
 @media (max-width: 767px) {
-    .container-fluid>.entertainment>.container {
+    .container-fluid>.content>.container {
         width: 100%;
         display: flex;
 
     }
 
-    .entertainment>.container>.container_left {
+    .content>.container>.container_left {
         display: grid;
         width: 100%;
         grid-template-columns: repeat(4, 100%);
@@ -249,27 +249,27 @@ body {
         animation: slide 10s infinite;
     }
 
-    .entertainment>.container>.container_right {
+    .content>.container>.container_right {
         width: 0px;
     }
 
-    .entertainment>.container>.container_left>a {
+    .content>.container>.container_left>a {
         width: 100%;
     }
 
-    .entertainment>.container>.container_left>a>.flag {
+    .content>.container>.container_left>a>.flag {
         top: 1000px;
     }
 
-    .entertainment>.container>.container_left>a>.text {
+    .content>.container>.container_left>a>.text {
         bottom: 10px;
     }
 
-    .entertainment>.container>.container_left>a>.text>.desc {
+    .content>.container>.container_left>a>.text>.desc {
         display: none;
     }
 
-    .entertainment>.container>.container_left>a>img {
+    .content>.container>.container_left>a>img {
         width: 80%;
         margin: auto;
     }
@@ -477,4 +477,53 @@ body {
     .video>.container>.container-botton>.container-botton-bottom>.container-botton-bottom-left>a>.image {
         width: 120%;
     }
+}
+
+.container-fluid>.entertainment {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* video  */
+.container-fluid>.video>.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.container-fluid>.video>.container>.container-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: #4390f8; */
+}
+
+.video>.container>.container-top>.flag {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    background-color: var(--bg-nav-active);
+    position: relative;
+}
+
+.video>.container>.container-top>.flag::after {
+    position: absolute;
+    content: "";
+    top: 0%;
+    left: 100%;
+    border-style: solid;
+    border-width: 50px 0px 0px 20px;
+    border-color: transparent transparent transparent var(--bg-nav-active);
+}
+
+.video>.container>.container-botton {
+    width: 100%;
+    box-shadow: var(--box-content-shadow);
+    padding: 15px 25px;
+    border-top: 3px solid var(--bg-nav-active);
+
 }
