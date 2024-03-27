@@ -1085,7 +1085,7 @@ body {
 .footer .container>.container-right>.socail-icon {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .footer .container>.container-right>.socail-icon>a {
@@ -1148,5 +1148,6 @@ body {
 
     .footer .container>.container-right {
         text-align: center;
+
     }
 }
